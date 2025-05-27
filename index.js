@@ -82,3 +82,88 @@ var filter = function(arr, fn) {
     }
     return filteredArr;
 };
+
+// 1. Double all numbers
+// Given an array of numbers, return a new array with each number multiplied by 2.
+// Example: [1, 2, 3] → [2, 4, 6]
+
+const arr = [1, 2, 3];
+// console.log("Original array: ", arr);
+// console.log("Modified array: ", arr.map((element) => {
+//     return element * 2;
+// }));
+
+
+// 2. Keep only even numbers
+// Given an array of integers, return a new array with only the even numbers.
+// Example: [1, 2, 3, 4, 5] → [2, 4]
+
+const arr2 = [1, 2, 3, 4, 5, 6, 7, 9, 11, 12, 14, 19];
+// console.log("Original array: ", arr2);
+// console.log("Even numbers from the array: ", arr2.filter((element) => {
+//     return element % 2 === 0;
+// }));
+
+// 3. Capitalize names
+// Given an array of lowercase names, return a new array with each name capitalized (first letter uppercase).
+// Example: ["alice", "bob"] → ["Alice", "Bob"]
+
+const arr3 = ["alice", "bob", "trudy"];
+// console.log("Original array: ", arr3);
+// console.log("Modified array: ", arr3.map((element) => {
+//     return element.charAt(0).toUpperCase() + element.substring(1);
+// }));
+
+
+// 4. Sum of numbers
+// Return the sum of all numbers in an array.
+// Example: [5, 10, 15] → 30
+
+const arr4 = [5, 10, 15];
+// console.log("Original array: ", arr4);
+// console.log("Modified array: ", arr4.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue;
+// }));
+
+
+// 5. Get names of adults
+// Given an array of people objects
+// Return an array with the names of people who are 18 or older.
+// Expected: ["Jane", "Jim"]
+
+const peopleArray = [
+  { name: "John", age: 17 },
+  { name: "Jane", age: 21 },
+  { name: "Jim", age: 18 }
+]
+
+console.log("Original array: ", peopleArray);
+console.log("Modified array: ", peopleArray.filter((element) => {
+    return element.age >= 18;
+}));
+
+
+
+
+// 7. Count how many times a value appears
+// Given an array of strings, return an object where the keys are the strings and the values are the number of times they appear.
+// Example: ["apple", "banana", "apple"] → { apple: 2, banana: 1 }
+
+
+
+
+// Flatten a nested array
+// Given a 2D array (e.g. [[1, 2], [3, 4]]), return a flattened version (e.g. [1, 2, 3, 4]).
+
+// Find the longest word
+// Given an array of words, return the word with the most characters.
+// Example: ["cat", "giraffe", "dog"] → "giraffe"
+
+// Format numbers with currency
+// Given an array of numbers, return a new array with each number formatted as a dollar string.
+// Example: [5, 10] → ["$5.00", "$10.00"]
+
+// Remove falsy values
+// Given an array, return a new array with only truthy values (remove false, 0, null, undefined, "", NaN).
+// Example: [0, "hello", false, 42, "", null] → ["hello", 42]
+
