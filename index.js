@@ -137,19 +137,30 @@ const peopleArray = [
   { name: "Jim", age: 18 }
 ]
 
-console.log("Original array: ", peopleArray);
-console.log("Modified array: ", peopleArray.filter((element) => {
-    return element.age >= 18;
-}));
-
-
+// console.log("Original array: ", peopleArray);
+// console.log("Modified array: ", peopleArray.filter((element) => {
+//     return element.age >= 18;
+// }));
 
 
 // 7. Count how many times a value appears
 // Given an array of strings, return an object where the keys are the strings and the values are the number of times they appear.
 // Example: ["apple", "banana", "apple"] → { apple: 2, banana: 1 }
 
-
+const arr5 = ["apple", "banana", "apple", "pear", "apple", "banana"]
+console.log("Original array: ", arr5);
+let createObj = (arr5) => {
+    const obj = {};
+    for(let i = 0; i < arr5.length; i++) {
+        if(obj[arr5[i]] === undefined) {
+            obj[arr5[i]] = 1;
+        } else {
+            obj[arr5[i]] = obj[arr5[i]] + 1;
+        }
+    }
+    return obj;}
+let obj = createObj(arr5);
+console.log("Modified array: ", obj);
 
 
 // Flatten a nested array
