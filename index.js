@@ -55,4 +55,30 @@ function createCounter(init) {
 // console.log(value.decrement())
 // console.log(value.reset())
 
-//
+// 2635. Apply Transform Over Each Element in Array
+// Learned quite a bit with this one
+
+let map = function(arr, fn) {
+    const newArr = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(fn(arr[i], i));
+    }
+
+    return newArr;
+}
+console.log(map([1, 2, 3], (el) => {
+    return el += 1;
+}));
+
+// 2634. Filter Elements from Array
+
+var filter = function(arr, fn) {
+    filteredArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (fn(arr[i], i)) {
+            filteredArr.push(arr[i]);
+        }
+    }
+    return filteredArr;
+};
