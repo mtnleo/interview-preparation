@@ -1,0 +1,179 @@
+/* CSS RESET */
+/* 1. Elimina márgenes, paddings y border por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Mejora la tipografía */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* 3. Ajustes para elementos comunes */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. Evita que los formularios hereden estilos inconsistentes */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 5. Quita la decoración de los enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 6. Quita las viñetas de las listas */
+ul, ol {
+  list-style: none;
+}
+
+/*------ NAV ----*/
+
+::selection {
+    color: black;
+    background:#ffb800 ;
+}
+
+body {
+    font-family:'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: #FFFF;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 5rem;
+    filter: drop-shadow(4px 4px 2px #21212118);
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.logo {
+    width: 15vw;
+}
+
+nav img {
+    width: 10rem;
+}
+
+
+
+body {
+    background-color: #f9f9f9;
+}
+
+#nav-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.sections {
+    color: #555;
+    font-size: large;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.cta-search {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 12px;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+}
+
+#cta-button {
+    background-color: #ffb800;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/*------------- NOTIFICATION BANNER --------------*/
+.main-body {
+    margin-top: 5rem;
+}
+
+.notification-banner {
+    background-color: #ffb800;
+    height: 3.3rem;
+    padding: 1rem;
+    color: black;
+
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: underline;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------- HERO SECTION --------------*/
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+}
+
+.hero video {
+    width: 100vw;
+    object-fit: contain;
+}
+
+.hero-text {
+    position: absolute;
+    top: 0;
+    height: 50%;
+    width: 70vw;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    color: #EEE;
+    gap: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.hero-text h3 {
+    font-size: x-large;
+    font-weight:normal;
+}
+
+.hero-text a {
+    font-weight: bold;
+    color: black;
+}
+
+/*------------- ABOUT GD --------------*/
