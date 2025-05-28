@@ -1,0 +1,248 @@
+/* CSS RESET */
+/* 1. Elimina márgenes, paddings y border por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Mejora la tipografía */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  color: #333;
+}
+
+/* 3. Ajustes para elementos comunes */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. Evita que los formularios hereden estilos inconsistentes */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 5. Quita la decoración de los enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 6. Quita las viñetas de las listas */
+ul, ol {
+  list-style: none;
+}
+
+/*------ NAV ----*/
+
+::selection {
+    color: black;
+    background:#ffb800 ;
+}
+
+body {
+    font-family:'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: #FFFF;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 5rem;
+    filter: drop-shadow(4px 4px 16px #21212118);
+    z-index: 10;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.logo {
+    width: 15vw;
+}
+
+nav img {
+    width: 10rem;
+}
+
+
+
+body {
+    background-color: #fff;
+}
+
+#nav-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.sections {
+    color: #555;
+    font-size: large;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.cta-search {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 12px;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+}
+
+#cta-button {
+    background-color: #ffb800;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/*------------- NOTIFICATION BANNER --------------*/
+.main-body {
+    margin-top: 5rem;
+    height: 100dvh;
+}
+
+.notification-banner {
+    background-color: #ffb800;
+    height: 3.3rem;
+    padding: 1rem;
+    color: black;
+
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: underline;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------- HERO SECTION --------------*/
+.hero {
+    position: relative;
+    width: 100vw;
+}
+
+.hero video {
+    width: 100vw;
+    object-fit: contain;
+}
+
+.hero-text {
+    position: absolute;
+    top: 0;
+    height: 50%;
+    width: 70vw;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    color: #EEE;
+    gap: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.hero-text h3 {
+    font-size: x-large;
+    font-weight:normal;
+}
+
+.hero-text a {
+    font-weight: bold;
+    color: black;
+}
+
+/*------------- ABOUT GD --------------*/
+.about-gd {
+    margin: 6rem;
+    width: 60dvw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-gd p {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+    font-weight: 300;
+    width: 80%;
+}
+
+.highlight {
+    text-decoration: underline;
+    text-decoration-color: #ffb800;
+    text-underline-offset: 4px;
+    transition: 0.2s;
+}
+
+.highlight:hover {
+    transition: background-color 0.1s ease-in-out;
+    background-color: #ffb800;
+    cursor: pointer;
+}
+
+/*------------- CLIENTS --------------*/
+.clients {
+    margin: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.clients img {
+    width: 12rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.clients-container {
+    margin-top: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 4rem;
+}
+
+/*------------- CLIENTS --------------*/
+footer {
+    background-color: #4a4a4a;
+    color: white;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
