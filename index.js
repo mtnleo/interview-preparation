@@ -160,11 +160,21 @@ let createObj = (arr5) => {
     }
     return obj;}
 let obj = createObj(arr5);
-console.log("Modified array: ", obj);
+// console.log("Modified array: ", obj);
+// console.log("Modified array: ", arr5.reduce((acc, curr) => {
+//     if(obj[acc[curr]] === undefined) {
+//             acc[curr] = 1;
+//         } else {
+//             acc[curr] = acc[curr] + 1;
+//         }
+// }, {}));
 
 
-// Flatten a nested array
+
+// 8. Flatten a nested array
 // Given a 2D array (e.g. [[1, 2], [3, 4]]), return a flattened version (e.g. [1, 2, 3, 4]).
+
+
 
 // Find the longest word
 // Given an array of words, return the word with the most characters.
@@ -178,3 +188,19 @@ console.log("Modified array: ", obj);
 // Given an array, return a new array with only truthy values (remove false, 0, null, undefined, "", NaN).
 // Example: [0, "hello", false, 42, "", null] → ["hello", 42]
 
+// FizzBuzz!
+function fizzbuzz() {
+    for (i = 1; i <= 100; i++) {
+        if(i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        }
+        else if(i % 3 === 0) {
+            console.log("Fizz");
+        }
+        else if(i % 5 === 0) {
+            console.log("Buzz");
+        }
+    }
+}
+
+fizzbuzz();
