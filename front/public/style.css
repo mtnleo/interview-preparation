@@ -115,13 +115,10 @@ body {
 }
 
 /*------------- NOTIFICATION BANNER --------------*/
-.main-body {
-    margin-top: 5rem;
-    height: 100dvh;
-}
 
 .notification-banner {
     background-color: #ffb800;
+    margin-top: 5rem;
     height: 3.3rem;
     padding: 1rem;
     color: black;
