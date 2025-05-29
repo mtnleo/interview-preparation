@@ -180,9 +180,27 @@ let obj = createObj(arr5);
 // Given an array of words, return the word with the most characters.
 // Example: ["cat", "giraffe", "dog"] → "giraffe"
 
+const arr6 = ["cat", "giraffe", "dog", "octopus", "the longest word", "d"];
+console.log("Original array: ", arr6);
+console.log("Longest word: ", arr6.reduce((acc, curr) => {
+    if (curr.length > acc.length) {
+        return curr;
+    }
+    else {
+        return acc;
+    }
+}, ""));
+
+
 // Format numbers with currency
 // Given an array of numbers, return a new array with each number formatted as a dollar string.
 // Example: [5, 10] → ["$5.00", "$10.00"]
+
+const arr7 = [5, 10, 320, 20, 103, 129, 100000];
+console.log("Original array: ", arr7)
+console.log("Modified array: ", arr7.map((element) => {
+    return `$${element}.00`;
+}))
 
 // Remove falsy values
 // Given an array, return a new array with only truthy values (remove false, 0, null, undefined, "", NaN).
@@ -190,7 +208,7 @@ let obj = createObj(arr5);
 
 // FizzBuzz!
 function fizzbuzz() {
-    for (i = 1; i <= 100; i++) {
+    for (let i = 1; i <= 100; i++) {
         if(i % 3 === 0 && i % 5 === 0) {
             console.log("FizzBuzz");
         }
@@ -203,4 +221,4 @@ function fizzbuzz() {
     }
 }
 
-fizzbuzz();
+// fizzbuzz();
